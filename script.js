@@ -91,10 +91,22 @@ function final() {
 	if (myScore == 5 || comScore == 5) {
  		document.getElementById('submit').disabled = true;
 		if (myScore == 5) {
-			alert("Galing nak lablabss! \n Alabyuuuu");
+			if(confirm("Galing nak lablabss! \n Alabyuuuu \nUsa pa?") == true) {
+        location.reload()
+      } else {
+        alert('OK')
+      }
 		} else {
-			alert("Pordi hi elabeyb");
+			if(confirm("Pordi ka! \nUsa pa?") == true) {
+        location.reload()
+      } else {
+        alert('OK')
+      }
 		}
 	}
+}
+
+function reload() {
+  location.reload();
 }
 

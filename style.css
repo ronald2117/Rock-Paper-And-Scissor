@@ -39,5 +39,10 @@ button:hover {
 		width: 100px;
 		height: 100px;
 	}
+  #score {
+    font-size: 200%;
+  }
 }
-#score 
+#footer {
+  text-align: center;
+}
