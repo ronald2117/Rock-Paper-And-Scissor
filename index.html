@@ -4,20 +4,40 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rock Paper And Scissor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1>Rock Paper and Scissor</h1>
+	<h1>Rock, Paper and Scissor Game</h1>
 	<h2 id="best">Best Of Five</h2>
-	<h3 id="result">Pick</h3>	
-	<h3>YOU<h3>
-	<p id="bet"><span>
-	<p><span id="myScore">0</span>:<span id="comScore">0</span></p>
-	<p>Computer: <span id="com">?</span><br>
-	<button onclick="rock()">Rock</button>
-	<button onclick="paper()">Paper</button>
-	<button onclick="scissor()">Scissor</button>
-	<br>
-	<button onclick="computerPlay()" id="submit">Submit</button>
+	<div class="game">
+		<div id="my-container" class="flex-container">	
+			<h4>YOU<h4>
+			<img id="myBet" src="questionmark1.jpg" alt="question mark">
+			<!--<p id="bet">?<p> -->
+		</div>
+		<div id="middle" class="flex-container">
+		    <h3 id="result">PICK</h3>
+		    <p id="score"><span id="myScore">0</span>:<span id="comScore">0</span></p>
+		</div>
+		<div id="com-container" class="flex-container">
+			<h4>COM</h4>
+			<img id="comBet" src="questionmark1.jpg" alt="question mark">
+			<!--<p id="com">?</p>-->
+		</div>
+	</div>
+
+<!--buttons-->
+	<div id="buttons">
+		<div id="rps">
+	    	<button onclick="rock()">Rock</button>
+	    	<button onclick="paper()">Paper</button>
+	    	<button onclick="scissor()">Scissor</button>
+	    </div>
+	    <button onclick="computerPlay()" id="submit">Submit</button>	    
+	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
