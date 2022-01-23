@@ -34,15 +34,24 @@ button:hover {
 	background: white !important;
 	color: black;
 }
-@media (max-width: 500px) {
+#footer {
+  text-align: center;
+}
+h3 {
+  font-size: 300%;
+}
+#score {
+    font-size: 400%;
+}
+@media (max-width: 700px) {
 	img {
 		width: 100px;
 		height: 100px;
 	}
+  h3 {
+    font-size: 200%;
+  }
   #score {
     font-size: 200%;
   }
-}
-#footer {
-  text-align: center;
 }

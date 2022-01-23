@@ -91,13 +91,13 @@ function final() {
 	if (myScore == 5 || comScore == 5) {
  		document.getElementById('submit').disabled = true;
 		if (myScore == 5) {
-			if(confirm("Galing nak lablabss! \n Alabyuuuu \nUsa pa?") == true) {
+			if(confirm("You Win!\nTry Again?") == true) {
         location.reload()
       } else {
         alert('OK')
       }
 		} else {
-			if(confirm("Pordi ka! \nUsa pa?") == true) {
+			if(confirm("Better luck next time.\nTry Again?") == true) {
         location.reload()
       } else {
         alert('OK')
